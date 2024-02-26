@@ -1,0 +1,359 @@
+/*html, body {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+
+.maindiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+ 
+.text {
+  padding: 10px;
+  background: url("https://media0.giphy.com/media/fSRQtBAzrPokPCItuu/200w.gif?cid=6c09b952lrss9xmzvubnr1hs18hz5hddthf2c0oectbhw7za&rid=200w.gif&ct=g");
+  /*background: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGY5YzViNDUxNTgzNWQ4MWZjNDZjOGIzMDhiYzQ3NjYyMjMwZDcxYiZjdD1n/kg19fN5BXbZGIDznzG/giphy.gif");*/
+
+/*background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: #00000047;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+	font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}*/
+
+
+/* ----------------home------------------- */
+
+.home {
+  color:white;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+
+  /*Animation Starts*/
+  @keyframes move {
+	0%{
+		transform: translate3d(0,0,1px) rotate(360deg);
+	}
+}
+.home .homeAnim {
+	position: relative;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	overflow: hidden;
+}
+.home .homeAnim span {
+	width: 7vmin;
+	height: 7vmin;
+	border-radius: 5vmin;
+	backface-visibility: hidden;
+	position: fixed;
+	animation-name: move;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+.home .homeAnim span:nth-child(1) {
+	color: #668d9f;
+	top: 50%;
+	left: 59%;
+	animation-duration: 40s;
+	animation-delay: -17s;
+	transform-origin: 3vw, 5vh;
+	box-shadow: 40vmin 0 5.824840026905435vmin currentColor;
+}
+.home .homeAnim span:nth-child(2) {
+	color: #a2bac4;
+	top: 9%;
+	left: 15%;
+	animation-duration: 55s;
+	animation-delay: -27s;
+	transform-origin: -13vw, -14vh;
+	box-shadow: 40vmin 0 5.510113716727798vmin currentColor;
+}
+.home .homeAnim span:nth-child(3) {
+	color: #668d9f;
+	top: 50%;
+	left: 69%;
+	animation-duration: 29s;
+	animation-delay: -39s;
+	transform-origin: 9vw, 23vh;
+	box-shadow: 40vmin 0 5.029063326382852vmin currentColor;
+}
+.home .homeAnim span:nth-child(4) {
+	color: #84a4b1;
+	top: 50%;
+	left: 7%;
+	animation-duration: 34s;
+	animation-delay: -23s;
+	transform-origin: 13vw, -20vh;
+	box-shadow: 40vmin 0 5.474162418088589vmin currentColor;
+}
+.home .homeAnim span:nth-child(5) {
+	color: #668d9f;
+	top: 73%;
+	left: 86%;
+	animation-duration: 42s;
+	animation-delay: -34s;
+	transform-origin: -16vw, -3vh;
+	box-shadow: 40vmin 0 5.077331475390018vmin currentColor;
+}
+.home .homeAnim span:nth-child(6) {
+	color: #517382;
+	top: 34%;
+	left: 88%;
+	animation-duration: 31s;
+	animation-delay: -10s;
+	transform-origin: 7vw, -15vh;
+	box-shadow: 40vmin 0 5.400245261992833vmin currentColor;
+}
+.home .homeAnim span:nth-child(7) {
+	color: #517382;
+	top: 98%;
+	left: 7%;
+	animation-duration: 46s;
+	animation-delay: -26s;
+	transform-origin: 15vw, 2vh;
+	box-shadow: 40vmin 0 5.4105833416810105vmin currentColor;
+}
+.home .homeAnim span:nth-child(8) {
+	color: #668d9f;
+	top: 96%;
+	left: 39%;
+	animation-duration: 22s;
+	animation-delay: -32s;
+	transform-origin: -23vw, 11vh;
+	box-shadow: 40vmin 0 5.300128162548674vmin currentColor;
+}
+.home .homeAnim span:nth-child(9) {
+	color: #a2bac4;
+	top: 96%;
+	left: 18%;
+	animation-duration: 52s;
+	animation-delay: -30s;
+	transform-origin: 18vw, -12vh;
+	box-shadow: 40vmin 0 5.635965756905147vmin currentColor;
+}
+.home .homeAnim span:nth-child(10) {
+	color: #a2bac4;
+	top: 30%;
+	left: 11%;
+	animation-duration: 10s;
+	animation-delay: -35s;
+	transform-origin: 4vw, -24vh;
+	box-shadow: 40vmin 0 5.991606443958107vmin currentColor;
+}
+.home .homeAnim span:nth-child(11) {
+	color: #84a4b1;
+	top: 64%;
+	left: 52%;
+	animation-duration: 39s;
+	animation-delay: -32s;
+	transform-origin: -6vw, -19vh;
+	box-shadow: 40vmin 0 5.670477488930427vmin currentColor;
+}
+.home .homeAnim span:nth-child(12) {
+	color: #517382;
+	top: 20%;
+	left: 38%;
+	animation-duration: 29s;
+	animation-delay: -36s;
+	transform-origin: 2vw, -2vh;
+	box-shadow: 40vmin 0 5.967930706964418vmin currentColor;
+}
+.home .homeAnim span:nth-child(13) {
+	color: #668d9f;
+	top: 62%;
+	left: 24%;
+	animation-duration: 50s;
+	animation-delay: -18s;
+	transform-origin: -16vw, 22vh;
+	box-shadow: 40vmin 0 5.655028313759559vmin currentColor;
+}
+.home .homeAnim span:nth-child(14) {
+	color: #668d9f;
+	top: 40%;
+	left: 21%;
+	animation-duration: 36s;
+	animation-delay: -39s;
+	transform-origin: -14vw, 15vh;
+	box-shadow: 40vmin 0 5.618525222304677vmin currentColor;
+}
+.home .homeAnim span:nth-child(15) {
+	color: #517382;
+	top: 20%;
+	left: 96%;
+	animation-duration: 14s;
+	animation-delay: -14s;
+	transform-origin: -16vw, 24vh;
+	box-shadow: 40vmin 0 5.371905363346271vmin currentColor;
+}
+.home .homeAnim span:nth-child(16) {
+	color: #84a4b1;
+	top: 28%;
+	left: 53%;
+	animation-duration: 33s;
+	animation-delay: -12s;
+	transform-origin: 13vw, 6vh;
+	box-shadow: 40vmin 0 5.67723640245026vmin currentColor;
+}
+.home .homeAnim span:nth-child(17) {
+	color: #84a4b1;
+	top: 9%;
+	left: 80%;
+	animation-duration: 54s;
+	animation-delay: -17s;
+	transform-origin: 5vw, 21vh;
+	box-shadow: 40vmin 0 5.8210208658394045vmin currentColor;
+}
+.home .homeAnim span:nth-child(18) {
+	color: #517382;
+	top: 11%;
+	left: 58%;
+	animation-duration: 48s;
+	animation-delay: -18s;
+	transform-origin: 11vw, -7vh;
+	box-shadow: 40vmin 0 5.987746195996114vmin currentColor;
+}
+.home .homeAnim span:nth-child(19) {
+	color: #517382;
+	top: 42%;
+	left: 19%;
+	animation-duration: 48s;
+	animation-delay: -24s;
+	transform-origin: -23vw, 23vh;
+	box-shadow: 40vmin 0 5.172950778307676vmin currentColor;
+}
+.home .homeAnim span:nth-child(20) {
+	color: #517382;
+	top: 5%;
+	left: 41%;
+	animation-duration: 32s;
+	animation-delay: -24s;
+	transform-origin: 11vw, 5vh;
+	box-shadow: 40vmin 0 5.440979937996817vmin currentColor;
+}
+  /*Animation Ends*/
+
+
+
+
+
+/*.word-wrapper h1 {
+  margin: 2rem 0rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#first_name {
+  background: -webkit-linear-gradient(#680D00,#8B3116,#CE3D27,#F8A720, #fed703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#last_name {
+  color: #fff;
+}
+
+.word-wrapper p {
+  color: #fff;
+  font-size: 1.5rem;
+}*/
+
+
+
+
+
+  /*Text Starts*/
+.home .home-content .text-1{
+  font-size: 27px;
+  color:#0398b3
+}
+.home .home-content .text-2{
+  background: -webkit-linear-gradient(#01414d,#025766,#026d80,#0398b3,#03aecc, #04c3e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  color:#0398b3;
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+  background: -webkit-linear-gradient(#01414d,#025766,#026d80,#0398b3,#03aecc, #04c3e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-weight: 750;
+}
+  /*Text Ends*/
+
+  /*Responsiveness Starts*/
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 930px;
+
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+   
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+}
